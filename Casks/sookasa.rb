@@ -1,12 +1,13 @@
 cask :v1 => 'sookasa' do
-  version '3.7.2'
-  sha256 '27192c3b1bc5a199071656e1f1e937d21ddd1c2f027c70768192e06f63ce67ee'
+  version '3.7.15'
+  sha256 'db5428d50eccfdb697563a658cc50cf6f011828d62d227937f38237f5ad3555e'
 
-  url 'https://d2rs8uj3cnos4.cloudfront.net/mac-apps/releases/Sookasa_3.7.2.pkg'
+  # cloudfront.net is the official download host per the vendor homepage
+  url "https://d2rs8uj3cnos4.cloudfront.net/mac-apps/releases/Sookasa_#{version}.pkg"
   homepage 'https://www.sookasa.com'
   license :commercial
 
-  pkg 'Sookasa_3.7.2.pkg'
+  pkg "Sookasa_#{version}.pkg"
 
   uninstall :quit => 'com.sookasa.Sookasa',
             :pkgutil => 'com.sookasa.Sookasa'
