@@ -1,12 +1,12 @@
 cask :v1 => 'tagspaces' do
-  version '1.9.0'
+  version '1.10.1'
 
   if Hardware::CPU.is_32_bit?
-    sha256 'ca127150d07d45b7b77beefe32df22441504c4de070468996372aed523341264'
-    url "https://github.com/uggrock/tagspaces/releases/download/#{version}/tagspaces-#{version}-osx32.zip"
+    sha256 'f931301324d56db7ca99e3b095d29f0d48b020521dc8252ba117dcffad110300'
+    url "https://github.com/tagspaces/tagspaces/releases/download/v#{version}/tagspaces-#{version}-osx32.zip"
   else
-    sha256 '42f115adb5ea7eb687c5b5b07d8843e895a8ed492a46800120e46f1c1f450aa2'
-    url "https://github.com/uggrock/tagspaces/releases/download/#{version}/tagspaces-#{version}-osx64.zip"
+    sha256 '3351b3988d87c92f17e906d97269fec0e698020a0539d32fa9bc9ef67d06661f'
+    url "https://github.com/tagspaces/tagspaces/releases/download/v#{version}/tagspaces-#{version}-osx64.zip"
   end
 
   homepage 'http://www.tagspaces.org'
