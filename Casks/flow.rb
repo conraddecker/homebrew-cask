@@ -7,4 +7,8 @@ cask :v1 => 'flow' do
   license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
 
   app 'Flow.app'
+
+  caveats do
+    discontinued
+  end
 end
