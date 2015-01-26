@@ -10,9 +10,6 @@ cask :v1 => 'candybar' do
   app 'CandyBar.app'
   caveats do
     discontinued
-
-    'Candybar is free of charge.  Visit the following link for a license
-
-      http://panic.com/bin/setup.php/cb3/PPQA-YAMA-E3KP-VHXG-B6AL-L'
+    free_license 'http://panic.com/bin/setup.php/cb3/PPQA-YAMA-E3KP-VHXG-B6AL-L'
   end
 end
