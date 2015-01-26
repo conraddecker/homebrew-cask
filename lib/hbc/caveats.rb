@@ -100,6 +100,14 @@ class Hbc::CaveatsDSL
     EOS
   end
 
+  def free_license(web_page)
+    puts <<-EOS.undent
+    You may get a free license from upstream to use #{@cask} at
+    #{web_page}
+
+    EOS
+  end
+
   def method_missing(method, *args)
     Hbc::Utils.method_missing_message(method, @cask.to_s, 'caveats')
     return nil
